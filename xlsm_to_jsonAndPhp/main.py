@@ -80,13 +80,13 @@ if not os.path.isfile(file_path):
     sys.exit(1)
 
 if not file_path.lower().endswith(".xlsm"):
-    print("\nThe selected file does not have the .xlsm extension. Invalid file, exiting..")
+    print("\nThe selected file does not have the .xlsm extension. Invalid file, exiting...")
     time.sleep(3)
     sys.exit(1)
 
 
 print("\nUsing file: {}".format(file_path) + "\n")
-input("Press Enter to start generating the files.." + "\n")
+input("Press Enter to start generating the files..." + "\n")
 associate_columns(file_path)
 print("File generation completed.")
 
